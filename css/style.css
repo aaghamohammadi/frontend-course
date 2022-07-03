@@ -1,12 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Vazirmatn, sans-serif;
   direction: rtl;
 }
 
 /** header **/
+.header-nav {
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.3);
+}
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0.5rem;
 }
 
 a:link,
@@ -21,11 +36,6 @@ a:hover {
   color: rgba(0, 0, 0, 0.9);
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -33,4 +43,11 @@ h1 {
 h2 {
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+h1,
+h2 {
+  margin-top: 1em;
+  text-align: center;
+  line-height: 1.6em;
 }

@@ -19,7 +19,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
+.header-nav li {
   display: inline-block;
   padding: 0.5rem;
 }

@@ -13,6 +13,10 @@ body {
 .header-nav {
   border-bottom: 1px solid #d9d9d9;
   box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.3);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
 }
 
 nav ul {

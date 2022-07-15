@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: Vazirmatn, sans-serif;
   direction: rtl;
@@ -59,4 +63,11 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+
+.summary-laptop img {
+  width: 70%;
+  height: auto;
+  min-width: 400px;
+  margin: auto;
 }

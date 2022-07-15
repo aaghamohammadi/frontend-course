@@ -65,9 +65,14 @@ h2 {
   gap: 2rem;
 }
 
+.summary-laptop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .summary-laptop img {
   width: 70%;
   height: auto;
   min-width: 400px;
-  margin: auto;
 }

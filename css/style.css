@@ -11,6 +11,9 @@ img {
 body {
   font-family: Vazirmatn, sans-serif;
   direction: rtl;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /** header **/

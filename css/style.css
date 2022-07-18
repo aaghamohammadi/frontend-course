@@ -10,6 +10,7 @@
   --SECONDARY-COLOR: #495057;
   --LIGHT-COLOR: #dee2e6;
   --BG-COLOR: #fff;
+  --BG-BANNER: rgba(0, 204, 255, 0.1);
 
   /* FONTS */
   --FF: Vazirmatn, sans-serif;
@@ -30,6 +31,16 @@ body {
 }
 
 /** header **/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  background-image: url("../images/cloud.svg"),
+    linear-gradient(var(--BG-COLOR), var(--BG-BANNER));
+  background-position: bottom -20px left 50%;
+  background-repeat: no-repeat;
+}
 .header-nav {
   border-bottom: 1px solid var(--LIGHT-COLOR);
   box-shadow: 0 1px 2px 0 var(--LIGHT-COLOR);
@@ -72,7 +83,7 @@ h2 {
   font-size: var(--FS-M);
   font-weight: 400;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 15rem;
   text-align: center;
 }
 

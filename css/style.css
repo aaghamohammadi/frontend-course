@@ -1,21 +1,21 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   /* COLORS */
+  --BG-BANNER: rgba(0, 204, 255, 0.1);
+  --BG-COLOR: #fff;
+  --LIGHT-COLOR: #dee2e6;
   --PRIMARY-COLOR: #212529;
   --SECONDARY-COLOR: #495057;
-  --LIGHT-COLOR: #dee2e6;
-  --BG-COLOR: #fff;
-  --BG-BANNER: rgba(0, 204, 255, 0.1);
 
   /* FONTS */
   --FF: Vazirmatn, sans-serif;
-  --FS-XL: 4rem;
   --FS-M: 1.5rem;
+  --FS-XL: 4rem;
 }
 
 img {
@@ -23,53 +23,53 @@ img {
 }
 
 body {
-  font-family: var(--FF);
   direction: rtl;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--FF);
+  min-height: 100vh;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 500px;
   background-image: url("../images/cloud.svg"),
     linear-gradient(var(--BG-COLOR), var(--BG-BANNER));
   background-position: bottom -20px left 50%;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
 }
 
 nav ul {
-  list-style-type: none;
   display: flex;
   gap: 1rem;
+  list-style-type: none;
 }
 
 a:link,
 a:visited,
 a:active {
-  text-decoration: none;
   color: var(--PRIMARY-COLOR);
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
   color: var(--SECONDARY-COLOR);
+  text-decoration: none;
 }
 
 h1 {
-  margin-top: 5rem;
   font-size: var(--FS-XL);
   font-weight: 700;
+  margin-top: 5rem;
   text-align: center;
 }
 h2 {
   font-size: var(--FS-M);
   font-weight: 400;
-  margin-top: 2rem;
   margin-bottom: 15rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -78,32 +78,34 @@ main {
 }
 
 .header__nav {
+  align-items: center;
+  background-color: var(--BG-COLOR);
   border-bottom: 1px solid var(--LIGHT-COLOR);
   box-shadow: 0 1px 2px 0 var(--LIGHT-COLOR);
-
-  background-color: var(--BG-COLOR);
-  width: 100%;
-  position: fixed;
-  top: 0;
   display: flex;
   flex-direction: row;
   min-height: 3rem;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.section__info {
+section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.section__fig-laptop {
+.section--grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section__figure {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.section__fig-laptop img {
+.section__img--laptop {
   width: 70%;
   height: auto;
   min-width: 400px;

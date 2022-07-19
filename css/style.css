@@ -90,22 +90,22 @@ main {
   width: 100%;
 }
 
-section {
+.features {
   display: grid;
   gap: 2rem;
 }
 
-.section--grid-col-2 {
+.features--grid-col-2 {
   grid-template-columns: 1fr 1fr;
 }
 
-.section__figure {
+.features__figure {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.section__img--laptop {
+.features__img {
   width: 70%;
   height: auto;
   min-width: 400px;

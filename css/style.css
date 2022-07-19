@@ -11,10 +11,12 @@
   --LIGHT-COLOR: #dee2e6;
   --PRIMARY-COLOR: #212529;
   --SECONDARY-COLOR: #495057;
+  --FEATURES-LINK-COLOR: #1864ab;
 
   /* FONTS */
   --FF: Vazirmatn, sans-serif;
   --FS-M: 1.5rem;
+  --FS-L: 2rem;
   --FS-XL: 4rem;
 }
 
@@ -109,4 +111,29 @@ main {
   width: 70%;
   height: auto;
   min-width: 400px;
+}
+
+.features__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 50%;
+}
+
+.features__item {
+  padding: 2rem;
+  box-shadow: 0 0 8px 0 var(--LIGHT-COLOR);
+  border-radius: 8px;
+}
+
+.features__header {
+  font-size: var(--FS-M);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.features__link:any-link {
+  display: block;
+  text-decoration: underline;
+  color: var(--FEATURES-LINK-COLOR);
 }

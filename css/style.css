@@ -12,6 +12,8 @@
   --PRIMARY-COLOR: #212529;
   --SECONDARY-COLOR: #495057;
   --FEATURES-LINK-COLOR: #1864ab;
+  --CARD-SHADOW-COLOR: #1864ab;
+  --CARD-NUMBER-COLOR: #00bcef;
 
   /* FONTS */
   --FF: Vazirmatn, sans-serif;
@@ -30,6 +32,7 @@ body {
   flex-direction: column;
   font-family: var(--FF);
   min-height: 100vh;
+  color: var(--PRIMARY-COLOR);
 }
 
 header {
@@ -136,4 +139,43 @@ main {
   display: block;
   text-decoration: underline;
   color: var(--FEATURES-LINK-COLOR);
+}
+
+.cards {
+  background-image: url("../images/stat.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15em 0;
+}
+
+.cards__container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.card {
+  background-color: var(--BG-COLOR);
+  border-radius: 16px;
+  box-shadow: 0 0px 16px -3px var(--CARD-SHADOW-COLOR);
+  padding: 16px 0;
+  text-align: center;
+  width: max(400px, 20vw);
+}
+
+.card__number {
+  color: var(--CARD-NUMBER-COLOR);
+  font-size: var(--FS-XL);
+  font-weight: bold;
+}
+
+.card__item {
+  font-size: var(--FS-M);
+  font-weight: bold;
 }

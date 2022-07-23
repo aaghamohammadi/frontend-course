@@ -118,7 +118,7 @@ a:hover {
   gap: 2rem;
 }
 
-.features--grid-col-2 {
+.features--grid {
   grid-template-columns: 1fr 1fr;
 }
 
@@ -129,9 +129,9 @@ a:hover {
 }
 
 .features__img {
-  width: 70%;
+  width: 80%;
   height: auto;
-  min-width: 400px;
+  min-width: 500px;
 }
 
 .features__items {
@@ -198,4 +198,25 @@ a:hover {
 .card__item {
   font-size: var(--FS-M);
   font-weight: bold;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+
+@media screen and (max-width: 1024px) {
+  .features--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features__figure {
+    justify-content: center;
+  }
+
+  .features__img {
+    width: 70%;
+  }
+
+  .features__items {
+    margin-right: 20%;
+    width: 50%;
+  }
 }

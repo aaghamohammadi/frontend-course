@@ -39,6 +39,7 @@
 
 main {
   flex-grow: 1;
+  margin: var(--MARGIN);
 }
 
 img {
@@ -201,8 +202,19 @@ a:hover {
 }
 
 /* RESPONSIVE MEDIA QUERY */
+@media all and (max-width: 768px) {
+  .header__nav {
+    flex-direction: column;
+    align-items: start;
+    width: fit-content;
+    position: relative;
+  }
+  .header__ul {
+    flex-direction: column;
+  }
+}
 
-@media screen, print and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .features--grid {
     grid-template-columns: 1fr;
   }

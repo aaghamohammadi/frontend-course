@@ -11,6 +11,7 @@
 :root {
   /*COLORS */
   --BG-COLOR: #fff;
+  --AUTH-BG-COLOR: #f0f4f7;
   --BG-HEADER-COLOR: linear-gradient(var(--BG-COLOR), rgba(0, 204, 255, 0.1));
   --HEADER-SHADOW-COLOR: #dee2e6;
   --HEADER-BORDER-COLOR: #dee2e6;
@@ -62,7 +63,7 @@ body {
 input,
 button {
   font: inherit;
-  border-radius: 8px;
+  border-radius: 4px;
   width: 100%;
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
@@ -219,13 +220,18 @@ a:hover {
 
 /* AUTHENTICATION */
 
+.auth-page {
+  background-color: var(--AUTH-BG-COLOR);
+}
+
 .auth {
   max-width: 360px;
   width: 100%;
   margin: 5em auto;
   padding: 5em var(--PADDING-SIDE);
-  border-radius: 16px;
-  box-shadow: 0 0 16px -3px var(--TEXT-FADE-COLOR);
+  border-radius: 8px;
+  box-shadow: 0 0 8px -6px var(--TEXT-FADE-COLOR);
+  background-color: var(--BG-COLOR);
 }
 
 .auth__form-signup {

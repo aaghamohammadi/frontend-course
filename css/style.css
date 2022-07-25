@@ -19,6 +19,7 @@
   --FEATURES-LINK-COLOR: #1864ab;
   --CARD-SHADOW-COLOR: #1864ab;
   --CARD-NUMBER-COLOR: #00bcef;
+  --BTN-SIGNUP-COLOR: #00bcef;
 
   /* FONTS */
   --FF: Vazirmatn, sans-serif;
@@ -56,6 +57,21 @@ body {
   min-height: 100vh;
   color: var(--TEXT-COLOR);
   font-size: var(--FS);
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 8px;
+  width: 100%;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+input {
+  text-align: start;
+}
+button:hover {
+  cursor: pointer;
 }
 
 a:link,
@@ -199,6 +215,29 @@ a:hover {
 .card__item {
   font-size: var(--FS-M);
   font-weight: bold;
+}
+
+/* AUTHENTICATION */
+
+.auth {
+  max-width: 360px;
+  width: 100%;
+  margin: 5em auto;
+  padding: 5em var(--PADDING-SIDE);
+  border-radius: 16px;
+  box-shadow: 0 0 16px -3px var(--TEXT-FADE-COLOR);
+}
+
+.auth__form-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.auth__btn-signup {
+  background-color: var(--BTN-SIGNUP-COLOR);
+  color: #fff;
 }
 
 /* RESPONSIVE MEDIA QUERY */

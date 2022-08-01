@@ -1,15 +1,14 @@
-//  This is a comment
-/* 
-1. comments
-2. comments
-*/
-console.log(typeof 2);
-console.log(typeof 3.5);
-console.log(typeof "Alireza");
-console.log(3 === 3);
-console.log(3 !== 5);
-console.log(3 !== 3);
-console.log(typeof true);
-console.log(typeof false);
-let firstName;
+let firstName = "Alireza";
 console.log(firstName);
+console.log(typeof firstName);
+firstName = "Nima";
+console.log(firstName);
+firstName = 12;
+console.log(firstName);
+console.log(typeof firstName);
+
+let age = 28;
+age = age + 1;
+console.log(age);
+
+const name = "Alireza";

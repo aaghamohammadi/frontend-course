@@ -1,14 +1,19 @@
-let firstName = "Alireza";
-console.log(firstName);
-console.log(typeof firstName);
-firstName = "Nima";
-console.log(firstName);
-firstName = 12;
-console.log(firstName);
-console.log(typeof firstName);
+const grade = 17;
+const curvedGrade = grade + 2; // * ** /
+console.log(curvedGrade);
 
-let age = 28;
-age = age + 1;
-console.log(age);
+let x = 10;
+++x;
+console.log(x);
+--x;
+console.log(x);
+x += 5; // x = x + 5
+console.log(x);
 
-const name = "Alireza";
+console.log(5 > 3);
+console.log(5 >= 5);
+console.log(5 <= 3);
+console.log(5 < 10);
+console.log(3 === 3);
+console.log("3" === 3);
+console.log("3" == 3); // Don't use it

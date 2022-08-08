@@ -1,19 +1,16 @@
-const grade = 17;
-const curvedGrade = grade + 2; // * ** /
-console.log(curvedGrade);
+const firstName = "Alireza";
+const lastName = "Aghamohammadi";
 
-let x = 10;
-++x;
-console.log(x);
---x;
-console.log(x);
-x += 5; // x = x + 5
-console.log(x);
+console.log(firstName + " " + lastName);
 
-console.log(5 > 3);
-console.log(5 >= 5);
-console.log(5 <= 3);
-console.log(5 < 10);
-console.log(3 === 3);
-console.log("3" === 3);
-console.log("3" == 3); // Don't use it
+console.log("Hi there," + "\n" + "I'm " + firstName + " " + lastName);
+
+const out = `Hi there,
+I'm ${firstName} ${lastName}`;
+console.log(out);
+
+console.log("Alireza" + 5);
+console.log("2" + 2);
+console.log("5" - 2);
+console.log("2" - 2);
+console.log(2 + "2" - 2);

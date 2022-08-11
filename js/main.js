@@ -1,16 +1,10 @@
-const firstName = "Alireza";
-const lastName = "Aghamohammadi";
+const gpa = 3.8;
+const IELTS = 7.5;
 
-console.log(firstName + " " + lastName);
+const isEligible = gpa >= 3.6 || IELTS >= 7;
+console.log(isEligible);
+console.log(!isEligible);
 
-console.log("Hi there," + "\n" + "I'm " + firstName + " " + lastName);
-
-const out = `Hi there,
-I'm ${firstName} ${lastName}`;
-console.log(out);
-
-console.log("Alireza" + 5);
-console.log("2" + 2);
-console.log("5" - 2);
-console.log("2" - 2);
-console.log(2 + "2" - 2);
+if (gpa >= 3.6 && IELTS >= 7) {
+  console.log("You're eligible...");
+}

@@ -1,10 +1,24 @@
-const gpa = 3.8;
-const IELTS = 7.5;
+"use strict";
 
-const isEligible = gpa >= 3.6 || IELTS >= 7;
-console.log(isEligible);
-console.log(!isEligible);
-
-if (gpa >= 3.6 && IELTS >= 7) {
-  console.log("You're eligible...");
+function greet(name) {
+  console.log("This function is running");
+  const out = `Hello, ${name}`;
+  return out;
 }
+
+const result = greet("Alireza");
+console.log(result);
+console.log(greet("Sarah"));
+
+function printer() {
+  console.log("This function prints");
+}
+
+printer();
+printer();
+
+const out2 = function (a, b) {
+  return a + b;
+};
+
+console.log(out2("Alireza", 5));

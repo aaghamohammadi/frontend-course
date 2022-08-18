@@ -1,24 +1,19 @@
 "use strict";
 
-function greet(name) {
-  console.log("This function is running");
-  const out = `Hello, ${name}`;
-  return out;
-}
-
-const result = greet("Alireza");
-console.log(result);
-console.log(greet("Sarah"));
-
-function printer() {
-  console.log("This function prints");
-}
-
-printer();
-printer();
-
-const out2 = function (a, b) {
+const out = function (a, b) {
   return a + b;
 };
 
-console.log(out2("Alireza", 5));
+console.log(out("Alireza", 5));
+
+// Arrow Function
+
+const result = (a, b) => a + b;
+console.log(result(2, 6));
+
+const output = (name) => {
+  const out2 = `Hello, ${name}`;
+  return out2;
+};
+
+console.log(output("Alireza"));

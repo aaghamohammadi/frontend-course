@@ -1,19 +1,28 @@
 "use strict";
 
-const out = function (a, b) {
-  return a + b;
-};
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
 
-console.log(out("Alireza", 5));
+const cities = ["Tehran", "Shiraz", "Esfahan", "Tabriz"];
 
-// Arrow Function
+for (let i = 0; i < cities.length; i++) {
+  console.log(cities[i]);
+}
 
-const result = (a, b) => a + b;
-console.log(result(2, 6));
+for (let i = cities.length - 1; i >= 0; i--) {
+  console.log(cities[i]);
+}
 
-const output = (name) => {
-  const out2 = `Hello, ${name}`;
-  return out2;
-};
+const arr = [5, 1, 12, 19, -23];
 
-console.log(output("Alireza"));
+let i = 0;
+let min = arr[i];
+while (i < arr.length) {
+  i++;
+  if (min < arr[i]) {
+    min = arr[i];
+  }
+}
+
+console.log(min);

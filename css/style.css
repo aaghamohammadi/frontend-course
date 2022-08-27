@@ -129,6 +129,19 @@ a:hover {
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
 
+.header__mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.header__mobile-nav--item {
+  height: 0.25rem;
+  width: 2rem;
+  background-color: var(--TEXT-COLOR);
+}
+
 /* FEATURES */
 
 .features {
@@ -255,7 +268,17 @@ a:hover {
     position: relative;
   }
   .header__ul {
+    display: none;
     flex-direction: column;
+  }
+
+  .header__ul.active {
+    display: flex;
+  }
+
+  .header__mobile-nav {
+    display: flex;
+    width: 100%;
   }
 }
 

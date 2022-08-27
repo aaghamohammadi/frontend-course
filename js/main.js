@@ -1,8 +1,7 @@
 "use strict";
 
-const header = document.querySelector(".header__ul");
-
-console.log(header);
-
-const divs = document.querySelectorAll("div");
-console.log(divs);
+const mobileNav = document.querySelector(".header__mobile-nav");
+const headerNav = document.querySelector(".header__ul");
+mobileNav.addEventListener("click", () => {
+  headerNav.classList.toggle("active");
+});

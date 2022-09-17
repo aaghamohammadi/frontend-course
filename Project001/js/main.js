@@ -1,4 +1,5 @@
 "use strict";
+import { Student } from "./modules/student.js";
 
 const mobileNav = document.querySelector(".header__mobile-nav");
 const headerNav = document.querySelector(".header__ul");
@@ -11,3 +12,5 @@ document.addEventListener("keydown", (event) => {
     event.preventDefault();
   }
 });
+
+// JSON - JavaScript Object Notation
